@@ -10,7 +10,7 @@
 Welcome to Auto-RITA. This utility can be used to automate performance
 monitoring while running [Offensive CounterMeasures' RITA
 (Real Intelligence Threat Analytics)](https://github.com/ocmdev/rita) platform. Data is collected in
-Splunk (running in Docker) and data is reported by collectd.
+[Splunk (running in Docker)](https://github.com/splunk/docker-splunk/tree/master/enterprise) and data is reported by [collectd](https://github.com/collectd/collectd).
 
 Auto-RITA can be configured to import and analyze bro logs between any
 two dates. While RITA is running information collected via collectd 
@@ -44,6 +44,8 @@ Select option "1" to install dependencies.
 ```
 (Interactive) 		python3 auto-rita.py
 (Cron Automation)	python3 auto-rita.py yesterday
+
+Note: For testing purposes calls to RITA import/analyze are commented out. 
 ```
 
 ### TODO
