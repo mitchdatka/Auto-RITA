@@ -58,6 +58,7 @@ Note: For testing purposes calls to RITA import/analyze are commented out.
 * Implement Splunk Python SDK to automate export of data
 * Implement collectd frequency as a variable.
 * External config for ease of use
+* Record log dir size (add to CSV)
 * Fix Known Issues...
 
 ### Known Issues
@@ -65,3 +66,5 @@ Note: For testing purposes calls to RITA import/analyze are commented out.
 * Docker container may not be running and initialized before program continues with execution.
 ** Docker is launched in background
 ** Program currently waits 30 sec before proceeding
+
+* RITA path must be included as a source in .bashrc
